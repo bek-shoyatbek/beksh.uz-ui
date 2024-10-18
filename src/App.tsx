@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 import Main from './pages/Main';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import BlogPost from './components/BlogPost';
 import './styles/global.css';
-import './App.css';
 
 const App: React.FC = () => {
   return (
@@ -14,13 +14,12 @@ const App: React.FC = () => {
       <div className="app">
         <Header />
         <main>
-          <div className="container">
-            <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/blog" element={<Blog />} />
-            </Routes>
-          </div>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+          </Routes>
         </main>
         <Footer />
       </div>

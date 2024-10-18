@@ -1,14 +1,76 @@
 .blog {
-    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
   
   .blog h1 {
-    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 2rem;
+    text-align: center;
   }
   
-  .blogPosts {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .blogList {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+  }
+  
+  .blogPost {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem;
+  }
+  
+  .blogPost:last-child {
+    border-bottom: none;
+  }
+  
+  .blogPost h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blogPost h2 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .blogPost h2 a:hover {
+    color: #007bff;
+  }
+  
+  .postMeta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .blogPost p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .readMore {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .readMore:hover {
+    color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .blog h1 {
+      font-size: 2rem;
+    }
+  
+    .blogPost h2 {
+      font-size: 1.5rem;
+    }
   }
