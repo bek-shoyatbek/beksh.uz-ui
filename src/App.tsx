@@ -6,6 +6,7 @@ import Main from './pages/Main';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import BlogPost from './components/BlogPost';
+import Animes from './pages/Animes';
 import './styles/global.css';
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/animes" element={<Animes />} />
           </Routes>
         </main>
         <Footer />
