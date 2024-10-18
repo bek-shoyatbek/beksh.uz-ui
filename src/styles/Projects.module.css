@@ -1,14 +1,104 @@
 .projects {
-    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
   
   .projects h1 {
-    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 2rem;
+    text-align: center;
   }
   
   .projectGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+  }
+  
+  .projectCard {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .projectCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .projectInfo {
+    padding: 1.5rem;
+  }
+  
+  .projectInfo h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectInfo p {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.25rem 0.5rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .githubLink, .liveLink {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .githubLink {
+    background-color: #24292e;
+    color: white;
+  }
+  
+  .githubLink:hover {
+    background-color: #2f363d;
+  }
+  
+  .liveLink {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .liveLink:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .projectGrid {
+      grid-template-columns: 1fr;
+    }
   }
