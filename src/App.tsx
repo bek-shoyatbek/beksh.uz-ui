@@ -8,6 +8,7 @@ import Blog from './pages/Blog';
 import BlogPost from './components/BlogPost';
 import Animes from './pages/Animes';
 import './styles/global.css';
+import { Analytics } from "@vercel/analytics/react"
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         </main>
         <Footer />
       </div>
+      <Analytics />
     </Router>
   );
 };
