@@ -1,0 +1,30 @@
+.main {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialLinks a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .socialLinks a:hover {
+    text-decoration: underline;
+  }
