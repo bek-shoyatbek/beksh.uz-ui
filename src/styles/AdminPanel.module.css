@@ -1,0 +1,70 @@
+.adminPanel {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  .newPost {
+    margin-bottom: 2rem;
+  }
+  
+  .newPost input,
+  .newPost textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .newPost textarea {
+    min-height: 100px;
+  }
+  
+  .newPost button,
+  .postList button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newPost button:hover,
+  .postList button:hover {
+    background-color: #45a049;
+  }
+  
+  .newPost button:disabled,
+  .postList button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .postList .post {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .postList button {
+    margin-right: 0.5rem;
+  }
+  
+  .postList button:last-child {
+    background-color: #f44336;
+  }
+  
+  .postList button:last-child:hover {
+    background-color: #d32f2f;
+  }
