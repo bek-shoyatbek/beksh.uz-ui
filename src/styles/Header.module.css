@@ -1,26 +1,37 @@
 .header {
-    background-color: #f8f9fa;
+    background-color: transparent;
     padding: 1rem 0;
   }
   
-  .header nav ul {
+  .nav {
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    gap: 2rem;
   }
   
-  .header nav ul li {
-    margin: 0 1rem;
-  }
-  
-  .header nav ul li a {
+  .nav a {
     color: #333;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .header nav ul li a:hover {
-    color: #007bff;
+  .nav a:hover,
+  .nav a.active {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  @media (max-width: 600px) {
+    .nav {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .nav a {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
   }
